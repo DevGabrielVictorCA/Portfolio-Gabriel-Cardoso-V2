@@ -8,8 +8,10 @@
 
     <meta property="og:title" content="Gabriel Cardoso | Desenvolvedor Web">
     <meta property="og:description" content="Portfólio com projetos de UI/UX e desenvolvimento front-end.">
-    <!-- <meta property="og:image" content="https://seudominio.com/assets/images/preview.png">
-    <meta property="og:url" content="https://seudominio.com/"> -->
+    <meta property="og:url" content="https://portfolio-gabriel-cardoso-nu.vercel.app/">
+    <meta property="og:image" content="https://portfolio-gabriel-cardoso-nu.vercel.app/assets/images/perfil.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <title>Gabriel Cardoso | Desenvolvedor Web Front-End UI/UX</title>
 
@@ -34,7 +36,8 @@
     <noscript>
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     </noscript>
-    <!-- <link rel="canonical" href="https://seudominio.com/"> -->
+
+    <link rel="canonical" href="https://portfolio-gabriel-cardoso-nu.vercel.app/">
 </head>
 <body>
     <header>
@@ -553,7 +556,10 @@
     window.addEventListener('load', () => {
         AOS.init({
             once: true,
-            duration: 800
+            duration: 800,
+            offset: 100,
+        throttleDelay: 99,
+        debounceDelay: 50
         }); 
     });
     </script>

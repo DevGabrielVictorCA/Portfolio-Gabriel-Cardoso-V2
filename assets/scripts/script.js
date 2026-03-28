@@ -1,11 +1,23 @@
 // VARIÁVEIS
+
+// Menu
 const btnMenu = document.querySelector('.btn-menu');
 const navbar = document.querySelector('.navbar');
 const header = document.querySelector('header');
-
 const voltarAoTopoBtn = document.getElementById('voltar-ao-topo');
 
 let ultimoScroll = 0;
+
+// Modal projeto
+const meuModal = document.getElementById('modal-projeto');
+const abrirModal = document.querySelectorAll('.abrir-projeto');
+const fecharModal = document.getElementById('fechar-projeto');
+const voltarModalBTN = document.getElementById('voltar-projeto');
+const avancarModalBTN = document.getElementById('avancar-projeto'); 
+const conteudoModal = document.querySelector('.conteudo-projeto')
+const templateModal = document.querySelectorAll('.template-projeto')
+
+let numeroModal = undefined;
 
 // MENU
 const toggleMenu = () => {
@@ -51,7 +63,7 @@ voltarAoTopoBtn.addEventListener('click', ()=>{
     })
 })
 
-// Header
+// HEADER
 function movimentoHeader(scrollAtual){
     if (document.body.classList.contains('itens-abertos')) return;
 
@@ -82,18 +94,7 @@ function movimentoHeader(scrollAtual){
     ultimoScroll = scrollAtual;
 }
 
-const meuModal = document.getElementById('modal-projeto');
-        
-const abrirModal = document.querySelectorAll('.abrir-projeto');
-const fecharModal = document.getElementById('fechar-projeto');
-const voltarModalBTN = document.getElementById('voltar-projeto');
-const avancarModalBTN = document.getElementById('avancar-projeto'); 
-
-const conteudoModal = document.querySelector('.conteudo-projeto')
-const templateModal = document.querySelectorAll('.template-projeto')
-
-let numeroModal = undefined;
-
+// MODAL PROJETO
 function renderModal(index){
     if (!templateModal[index]) return;
 
