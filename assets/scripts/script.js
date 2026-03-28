@@ -104,18 +104,26 @@ function renderModal(index){
     document.body.classList.add('itens-abertos');
 }
 
-abrirModal.forEach(botao =>{
-    botao.addEventListener('click', (e)=>{
+abrirModal.forEach(botao => {
+    botao.addEventListener('click', (e) => {
         numeroModal = Number(e.currentTarget.dataset.indexProjeto) || 0;
-        renderModal(numeroModal)
-        meuModal.showModal()
-    })
-})
+        renderModal(numeroModal);
+        meuModal.showModal();
+
+        requestAnimationFrame(() => {
+            meuModal.classList.add("active");
+        });
+    });
+});
 
 fecharModal.addEventListener('click', ()=> {
     numeroModal = undefined;
     document.body.classList.remove('itens-abertos');
-    meuModal.close()
+    meuModal.classList.remove("active");
+
+    setTimeout(() => {
+        meuModal.close();
+    }, 300);
 })
 
 voltarModalBTN.addEventListener('click', ()=>{
@@ -131,6 +139,3 @@ avancarModalBTN.addEventListener('click', ()=>{
         
     renderModal(numeroModal)
 })
-
-// renderModal(0)
-// meuModal.showModal()

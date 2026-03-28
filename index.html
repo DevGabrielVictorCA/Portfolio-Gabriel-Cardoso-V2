@@ -13,23 +13,24 @@
 
     <title>Gabriel Cardoso | Desenvolvedor Web Front-End UI/UX</title>
     
-    <!-- CSS --> data-aos="fade-up" data-aos="zoom-out"
+    <!-- Preconnect (ANTES de tudo relacionado a fontes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Inter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poiret+One&display=swap" rel="stylesheet">    
+    
+    <!-- CSS local -->
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="assets/styles/responsividade.css">
 
-    <!-- Google Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poiret+One&display=swap" rel="stylesheet">
-
-    <!-- Biblioteca AOS -->
-    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
     <!-- <link rel="canonical" href="https://seudominio.com/"> -->
 </head>
 <body>
-    <header data-aos="fade-down">
+    <header>
         <a href="#hero" aria-label="Página inicial - Gabriel Cardoso" id="text-logo">Gabriel Cardoso</a>
 
         <nav>
@@ -53,12 +54,12 @@
         <section class="hero" id="hero" aria-label="Página inicial">
             <div class="hero-destaque">
                 <h1 id="hero-name" data-aos="zoom-out-right">Desenvolvedor <span>Web</span></h1>
-                <img id="hero-img" src="assets/images/perfil.webp" alt="Imagem de perfil Gabriel Cardoso" width="655" height="715" fetchpriority="high" decoding="async" data-aos="zoom-out">
+                <img id="hero-img" src="assets/images/perfil.webp" alt="Imagem de perfil Gabriel Cardoso" width="655" height="655" fetchpriority="high" decoding="async" data-aos="zoom-out-right">
             </div>
 
             <article class="cta">
                 <div class="apresentacao" data-aos="zoom-out-right">
-                    <h3>Olá, sou <span>Gabriel</span>.</h3>
+                    <h2>Olá, sou <span>Gabriel</span>.</h2>
                     <p>Crio interfaces modernas <br>com foco em UI/UX.</p>
                 </div>
                 <div class="cta-btns" data-aos="zoom-out-right">
@@ -214,10 +215,7 @@
                                                 <path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"/>
                                             </svg>
                                         </div>
-                                        <p class="front-item-descricao">
-                                            <span>HTML5</span><br>
-                                            90%
-                                        </p>
+                                        <p class="front-item-descricao">HTML5</p>
                                     </div>
 
                                     <div class="front-item-container">
@@ -229,10 +227,7 @@
                                                 <path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"/>
                                             </svg>
                                         </div> 
-                                        <p class="front-item-descricao">
-                                            <span>CSS3</span><br>
-                                            80%
-                                        </p>
+                                        <p class="front-item-descricao">CSS3</p>
                                     </div>
 
                                     <div class="front-item-container">
@@ -242,10 +237,7 @@
                                                 <path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"/>
                                             </svg>
                                         </div>
-                                        <p class="front-item-descricao">
-                                            <span>Javascript</span><br>
-                                            60%
-                                        </p>
+                                        <p class="front-item-descricao">Javascript</p>
                                     </div>
 
                                     <div class="front-item-container">
@@ -267,10 +259,7 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <p class="front-item-descricao">
-                                            <span>Wordpress+  <br>Elementor</span><br>
-                                            40%
-                                        </p>
+                                        <p class="front-item-descricao">Wordpress+ <br>Elementor</p>
                                     </div>
                                 </div>
                             </div>
@@ -285,10 +274,7 @@
                                                 <path fill="#F4511E" d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z"/>
                                             </svg>
                                         </div>
-                                        <p class="front-item-descricao">
-                                            <span>Git</span><br>
-                                            75%
-                                        </p>
+                                        <p class="front-item-descricao">Git</p>
                                     </div>
 
                                     <div class="front-item-container">
@@ -298,10 +284,7 @@
                                                 <path d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z"/>
                                             </svg>
                                         </div>
-                                        <p class="front-item-descricao">
-                                            <span>GitHub</span><br>
-                                            75%
-                                        </p>
+                                        <p class="front-item-descricao">GitHub</p>
                                     </div>
 
                                     <div class="front-item-container">
@@ -314,10 +297,7 @@
                                                 <circle cx="32" cy="24" r="7" fill="#29b6f6"/>
                                             </svg>
                                         </div>
-                                        <p class="front-item-descricao">
-                                            <span>Figma</span><br>
-                                            60%
-                                        </p>
+                                        <p class="front-item-descricao">Figma</p>
                                     </div>
                                 </div>
                             </div>

@@ -183,8 +183,8 @@
         margin-bottom: 0; 
     }
 
-    .apresentacao h3{ font-size: calc(var(--size-h2-mini) - .2em); }
-    .apresentacao h3 span{ font-size: calc(var(--size-h2) - .2em); }
+    .apresentacao h2{ font-size: calc(var(--size-h2-mini) - .2em); }
+    .apresentacao h2 span{ font-size: calc(var(--size-h2) - .2em); }
     .apresentacao p { font-size: calc(var(--size-h4) - .1em); }
 
     .btn-menu{ display: none; }
