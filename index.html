@@ -63,23 +63,34 @@
     <main>
         <section class="hero" id="hero" aria-label="Página inicial">
             <div class="hero-destaque">
-                <h1 id="hero-name" data-aos="zoom-out-right">Desenvolvedor <span>Web</span></h1>
+                <h1 id="hero-name" data-aos="zoom-out">Desenvolvedor <span>Web</span></h1>
                 <img id="hero-img" src="assets/images/perfil.webp" alt="Imagem de perfil Gabriel Cardoso" width="655" height="655" fetchpriority="high" decoding="async" data-aos="zoom-out-right">
             </div>
 
             <article class="cta">
-                <div class="apresentacao" data-aos="zoom-out-right">
+                <div class="apresentacao" data-aos="zoom-out">
                     <h2>Olá, sou <span>Gabriel</span>.</h2>
-                    <p>Crio interfaces modernas <br>com foco em UI/UX.</p>
+                    <p>Crio sites modernos que <br> geram resultados.</p>
                 </div>
-                <div class="cta-btns" data-aos="zoom-out-right">
-                    <a href="#projetos" class="cta-BTN">
-                        <span>Ver Projetos</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-                            <path d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z"/>
-                        </svg>
-                    </a>
+                
+                <div class="cta-btns" data-aos="zoom-out">
+                    <div class="projetos-orcamento">
+                        <a href="#projetos" class="cta-BTN">
+                            <span>Ver Projetos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                                <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z"/>
+                            </svg>
+                        </a>
+                        
+                        <a href="#" class="cta-BTN">
+                            <span>Solicitar Orçamemto</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                                <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z"/>
+                            </svg>
+                        </a>
+                    </div>
 
                     <div class="hero-contatos">
                         <a href="https://github.com/DevGabrielVictorCA" target="_blank" title="Conheça o meu Github." rel="noopener noreferrer" class="h-contato"> <!-- Github -->
@@ -112,7 +123,7 @@
         </section>
 
         <section class="projetos" id="projetos" aria-label="Projetos Desenvolvidos">
-            <h2 class="P-title" data-aos="zoom-out-right"><span>Projetos</span> selecionados</h2>
+            <h2 class="P-title" data-aos="fade-down"><span>Projetos</span> recentes</h2>
             <div class="grid-projetos">
                 
                 <article class="projeto destaque" data-aos="fade-down">
@@ -124,8 +135,8 @@
                     </div>
 
                     <div class="projeto-container">
-                        <span class="tipo-projeto">Landing Page</span>
                         <h3><span>USAIN</span> Soluções Digitais</h3>
+                        <span class="tipo-projeto">Landing page moderna com foco em apresentação e conversão.</span>
                         <p>HTML • CSS • Javascript</p>
 
                         <button class="abrir-projeto">
@@ -134,40 +145,32 @@
                     </div>
                 </article>
 
-                <article class="projeto second" data-aos="zoom-out-right">
+                <article class="projeto second" data-aos="fade-down">
                     <div class="img-projeto second">
                         <img src="assets/images/sl20.com.br.webp" alt="Landing page institucional da SL20 Engenharia desenvolvida por Gabriel Cardoso" loading="lazy">
                     </div>
 
                     <div class="projeto-container">
-                        <span class="tipo-projeto">Landing Page institucional</span>
                         <h3><span>SL20</span> Engenharia</h3>
+                        <span class="tipo-projeto">Site institucional com foco em credibilidade e presença digital.</span>
                         <p>Wordpress • Elementor</p>
                         <button class="abrir-projeto" data-index-projeto="1">
                             <span>Ver projeto</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-                            <path d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z"/>
-                        </svg>
                         </button>
                     </div>
                 </article>
 
-                <article class="projeto third" data-aos="zoom-out-right">
+                <article class="projeto third" data-aos="fade-down">
                     <div class="img-projeto third">
                         <img src="assets/images/star-wars-list.webp" alt="Sistema web Star Wars To-do List desenvolvida por Gabriel Cardoso" loading="lazy">
                     </div>
 
                     <div class="projeto-container">
-                        <span class="tipo-projeto">Sistema Web</span>
                         <h3><span>Star Wars</span> To-do List</h3>
+                        <span class="tipo-projeto">Aplicação web interativa com foco em usabilidade.</span>
                         <p>HTML • CSS • Javascript</p>
                         <button class="abrir-projeto" data-index-projeto="2">
                             <span>Ver projeto</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-                            <path d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z"/>
-                        </svg>
                         </button>
                     </div>                   
                 </article>
@@ -191,7 +194,7 @@
                 <div class="S-content">
                     <div class="SF-item">
                         <h4 class="SF-item-h4">Graduação</h4>
-                        <p class="SF-item-p"><span id="ano-F">2025 - </span><br>Análise e Desenvolvimento de Sistemas</p>
+                        <p class="SF-item-p"><span id="ano-F">Concluído (2025) - </span><br>Análise e Desenvolvimento de Sistemas</p>
                     </div>
     
                     <div class="SF-item">
@@ -313,7 +316,7 @@
                             </div>
                         </div>
                     </div>
-                    <p id="ui-ux"><span>UI / UX</span><br>Responsividade • Hierarquia • Acessibilidade</p>
+                    <p id="ui-ux"><span>UI / UX</span><br>Usabilidade • Hierarquia visual • Acessibilidade</p>
                 </div>
             </article>
 
@@ -329,7 +332,7 @@
             </article>
 
             <article class="S-item fifth" id="contatos" data-aos="zoom-out">
-                <h3>Fale comigo</h3>
+                <h3>Vamos conversar?</h3>
                 <hr>
                 <div class="S-content redes">
                     <div class="grupo-redes">
@@ -546,7 +549,7 @@
     <footer>
         <p data-aos="z">
             <span>Gabriel Cardoso</span>
-            <br>Criando experiências digitais modernas.
+            <br>Criando sites modernos que geram resultados.
         </p>
     </footer>
 

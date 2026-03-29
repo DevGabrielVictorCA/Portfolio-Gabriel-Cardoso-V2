@@ -41,6 +41,8 @@
         height: 20em;
     }
 
+    .projetos-orcamento{ align-items: start; }
+
     .cta-btns{ 
         margin-top: 80px;
         gap: 3em;
@@ -158,8 +160,8 @@
     }
 
     #hero-img{
-        width: 14em;
-        height: 14em;
+        width: 12em;
+        height: 12em;
         margin: 0 auto;
         transform: translate(-10px, -50px);
     }
@@ -192,8 +194,14 @@
     .cta-btns{
         flex-direction: column;
         align-items: end;
-        gap: 1.5em;
+        gap: 1.3em;
     }
+
+    .projetos-orcamento{ 
+        gap: .9em; 
+        align-items: end;
+    }
+
 
     .cta-BTN{
         display: flex;
@@ -230,7 +238,8 @@
     }
 
     .projeto.mobile{ display: none; }
-    .tipo-projeto{ padding-bottom: 12px; }
+
+    .projeto.destaque .tipo-projeto{padding: 8px 0 18px !important;}
 
     .projeto.destaque .projeto-container{
         display: flex;

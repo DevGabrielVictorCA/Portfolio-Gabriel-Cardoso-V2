@@ -19,7 +19,7 @@
     --gray-card: #212121;
     --gray-card-rgba: rgba(33, 33, 33, 0.85);
 
-    --size-h1: 2.6rem;
+    --size-h1: 2.45rem;
 
     --size-h2: clamp(1.6rem, 1.4rem + 2.2vw, 1.9rem);
     --size-h2-mini: clamp(1.5rem, 1.3rem + 2vw, 1.7rem);
@@ -215,7 +215,7 @@ header.descoberto{ transform: translateY(0); }
 .apresentacao{
     position: relative;
     padding: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .apresentacao::after,
@@ -260,11 +260,13 @@ header.descoberto{ transform: translateY(0); }
     font-weight: 200;
 }
 
+
+.projetos-orcamento,
 .cta-btns{
     display: flex;
     align-items: end;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1.1em;
 }
 
 .cta-BTN {
@@ -273,18 +275,28 @@ header.descoberto{ transform: translateY(0); }
     align-items: center;
     flex-direction: row-reverse;
     text-align: center;
-    padding: .9em 1.2em;
     border-radius: 15px;
     text-decoration: none;
     font-size: var(--size-p);
     font-weight: 500;
-    background-color: var(--blue-button);
-    color: var(--white-title);
     transition: all .3s ease-in-out;
     position: relative;
     z-index: 2;
     border: 2px solid var(--blue-button);
 }
+
+.cta-BTN:nth-child(1){
+    color: var(--blue-text);
+    width: 10em;
+    padding: .8em;
+} 
+
+.cta-BTN:nth-child(1):after{ 
+    opacity: 0; 
+    transition: opacity .3s ease;
+}
+
+.cta-BTN:nth-child(1):hover::after{ opacity: 1; }
 
 .cta-BTN::after{
     position: absolute;
@@ -302,19 +314,28 @@ header.descoberto{ transform: translateY(0); }
     width: var(--size-h3-mini);
     height: auto;
     margin-right: 1em;
-    transform: rotate(180deg);
-    fill: var(--white-title);
     transition: transform .3s ease-in-out;
+    transform: rotate(180deg);
 }
+
+.cta-BTN:nth-child(2){
+    padding: .8em 1em;
+    background-color: var(--blue-button);
+    color: var(--white-title);
+}
+
+.cta-BTN:nth-child(1) svg{ fill: var(--blue-text);}
+.cta-BTN:nth-child(2) svg{ fill: var(--white-title);}
+
+
+.cta-BTN span{ transition: transform .3s ease-in-out;}
+.cta-BTN:hover span{  transform: translateX(3px); }
 
 .cta-BTN:hover{
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); 
     background: rgba(59, 130, 246, 0.05);
     color: var(--blue-text);
 }
-
-.cta-BTN span{ transition: transform .3s ease-in-out;}
-.cta-BTN:hover span{  transform: translateX(3px); }
 
 .cta-BTN:hover svg{ 
     fill: var(--blue-text); 
@@ -445,7 +466,7 @@ aside button:hover,
     font-weight: 200;
     font-size: var(--size-p-mini);
     color: var(--white-text);
-    padding-bottom: 12px;
+    padding: 8px 0 12px;
     transform: translateY(-5px);
 }
 
@@ -482,6 +503,7 @@ aside button:hover,
     margin-left: auto;
     font-size: var(--size-p);
     cursor: pointer;
+    transform: translateY(-30px);
 }
 
 .projeto-container button:hover{ box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); }
@@ -502,17 +524,6 @@ aside button:hover,
 .projeto-container button:hover::after{ opacity: 1; }
 .projeto-container button span{ transition: transform .3s ease; }
 .projeto-container button:hover span{ transform: translateX(-3px);}
-
-
-.projeto-container button svg{ 
-    width: var(--size-h3-mini);
-    height: auto;
-    margin-left: .8em; 
-    fill: var(--blue-text);
-    transition: transform .3s ease;
-}
-
-.projeto-container button:hover svg{ transform: translateX(5px);}
 
 /* ---------------- Modal Projetos---------------- */
 #modal-projeto {
@@ -937,17 +948,16 @@ aside button:hover,
     font-size: var(--size-p-mini);
     font-weight: 500;
     gap: .7em;
-    text-decoration: none;
     transition: transform .3s ease;
 }
 
 .grupo-redes a:hover{
-    text-decoration: underline;
     transform: translateX(3px);
     text-shadow: 2px 2px 2px rgba(59, 130, 246, 0.2);
 }
 
 #redes-email{ transform: translateX(4px);}
+#redes-email:hover{ transform: translateX(6px);}
 
 /* ---------------- ASIDE ---------------- */
 aside{
