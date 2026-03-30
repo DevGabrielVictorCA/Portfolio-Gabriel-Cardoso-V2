@@ -177,11 +177,10 @@
         left: 50%;
         transform: translateX(-50%);
         padding: 0 8%;
-        /* border: 2px solid red; */
     }
 
     .apresentacao{ 
-        padding: 25px;
+        padding: 25px 25px 18px;
         padding-top: 0;
         margin-bottom: 0;
     }

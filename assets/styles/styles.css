@@ -284,12 +284,19 @@ header.descoberto{ transform: translateY(0); }
 }
 
 .projetos-BTN{ 
-    margin-top: 1.3em;
+    justify-content: start;
+    background-color: transparent;
+    border: none;
+    margin-top: .5em;
+    padding: .5em;
     color: var(--blue-text); 
-    padding: .6em;
     flex-direction: row;
     width: 10em;
+    font-weight: 600;
+    font-size: var(--size-p);
 }
+
+.projetos-BTN:hover{ text-shadow: 2px 2px 2px rgba(59, 130, 246, 0.5); }
 
 .cta-BTN{
     flex-direction: row-reverse;
@@ -298,7 +305,7 @@ header.descoberto{ transform: translateY(0); }
     color: var(--white-title);
 }
 
-.projetos-BTN::after,
+/* .projetos-BTN::after, */
 .cta-BTN::after{
     position: absolute;
     content: '';
@@ -336,7 +343,6 @@ header.descoberto{ transform: translateY(0); }
 .projetos-BTN:hover span{  transform: translateX(-3px); }
 .cta-BTN:hover span{  transform: translateX(3px); }
 
-.projetos-BTN:hover,
 .cta-BTN:hover{
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); 
     background: rgba(59, 130, 246, 0.05);
