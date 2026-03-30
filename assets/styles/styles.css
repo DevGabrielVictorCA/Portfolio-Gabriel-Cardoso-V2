@@ -207,15 +207,15 @@ header.descoberto{ transform: translateY(0); }
     width: 13.5em;
     height: 13.5em;
     object-fit: cover;
-    margin: 2.8em 0;
+    margin: 3em 0;
     border-radius: 50%;
     margin-left: auto;
 }
 
 .apresentacao{
     position: relative;
-    padding: 20px;
-    margin-bottom: 25px;
+    padding: 25px;
+    margin-bottom: 2.5em;
 }
 
 .apresentacao::after,
@@ -260,20 +260,18 @@ header.descoberto{ transform: translateY(0); }
     font-weight: 200;
 }
 
-
-.projetos-orcamento,
 .cta-btns{
     display: flex;
     align-items: end;
     flex-direction: column;
-    gap: 1.1em;
+    gap: 1.3em;
 }
 
+.projetos-BTN,
 .cta-BTN {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row-reverse;
     text-align: center;
     border-radius: 15px;
     text-decoration: none;
@@ -285,19 +283,22 @@ header.descoberto{ transform: translateY(0); }
     border: 2px solid var(--blue-button);
 }
 
-.cta-BTN:nth-child(1){
-    color: var(--blue-text);
+.projetos-BTN{ 
+    margin-top: 1.3em;
+    color: var(--blue-text); 
+    padding: .6em;
+    flex-direction: row;
     width: 10em;
-    padding: .8em;
-} 
-
-.cta-BTN:nth-child(1):after{ 
-    opacity: 0; 
-    transition: opacity .3s ease;
 }
 
-.cta-BTN:nth-child(1):hover::after{ opacity: 1; }
+.cta-BTN{
+    flex-direction: row-reverse;
+    padding: .6em .8em;
+    background-color: var(--blue-button);
+    color: var(--white-title);
+}
 
+.projetos-BTN::after,
 .cta-BTN::after{
     position: absolute;
     content: '';
@@ -310,32 +311,39 @@ header.descoberto{ transform: translateY(0); }
     z-index: 1;
 }
 
+.projetos-BTN svg,
 .cta-BTN svg{ 
     width: var(--size-h3-mini);
     height: auto;
-    margin-right: 1em;
     transition: transform .3s ease-in-out;
+}
+
+.projetos-BTN svg{ 
+    fill: var(--blue-text);
+    margin-left: .5em;
+}
+
+.cta-BTN svg{ 
+    fill: var(--white-title);
     transform: rotate(180deg);
+    margin-right: .5em;
 }
 
-.cta-BTN:nth-child(2){
-    padding: .8em 1em;
-    background-color: var(--blue-button);
-    color: var(--white-title);
-}
-
-.cta-BTN:nth-child(1) svg{ fill: var(--blue-text);}
-.cta-BTN:nth-child(2) svg{ fill: var(--white-title);}
-
-
+.projetos-BTN span,
 .cta-BTN span{ transition: transform .3s ease-in-out;}
+
+
+.projetos-BTN:hover span{  transform: translateX(-3px); }
 .cta-BTN:hover span{  transform: translateX(3px); }
 
+.projetos-BTN:hover,
 .cta-BTN:hover{
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); 
     background: rgba(59, 130, 246, 0.05);
     color: var(--blue-text);
 }
+
+.projetos-BTN:hover svg{ transform: translateX(3px); }
 
 .cta-BTN:hover svg{ 
     fill: var(--blue-text); 
@@ -370,7 +378,7 @@ aside button,
 .h-contato svg{ fill: var(--white-text)}
 
 .h-contato:hover,
-.front-item:hover,
+.front-item-container:hover .front-item,
 aside button:hover,
 #whatsapp:hover{
     transform: translateY(-3px); 
@@ -766,6 +774,7 @@ aside button:hover,
     color: var(--blue-text);
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); 
     background: rgba(59, 130, 246, 0.05);
+    transform: translateY(-3px);
 }
 
 .projeto-btn:nth-child(2){
@@ -879,6 +888,12 @@ aside button:hover,
     transform: translateY(-3px);
 }
 
+.front-item-container:hover .front-item-descricao{
+    transform: translateY(-6px);
+    text-shadow: 2px 2px 2px rgba(59, 130, 246, 0.3);
+    cursor: default;
+}
+
 .front-item{
     display: flex;
     justify-content: center;
@@ -886,11 +901,6 @@ aside button:hover,
     margin-bottom: .8em;
     transition: all .3s ease;
     cursor: auto;
-}
-
-.front-item:hover ~ .front-item-descricao{
-    transform: translateY(-6px);
-    text-shadow: 2px 2px 2px rgba(59, 130, 246, 0.3);
 }
 
 #wp{ transform: translate(-7px, 2px) scale(1.2); }
@@ -930,6 +940,17 @@ aside button:hover,
     font-weight: 500;
 }
 
+.S-content.redes{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.links-redes{
+    display: flex;
+    flex-direction: column;
+}
+
 .grupo-redes{
     display: flex;
     justify-content: center;
@@ -937,6 +958,13 @@ aside button:hover,
     flex-direction: column;
     gap: .8em;
     padding-bottom: .8em;
+}
+
+.grupo-redes:last-child{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 2em;
 }
 
 .grupo-redes a{
@@ -951,13 +979,43 @@ aside button:hover,
     transition: transform .3s ease;
 }
 
-.grupo-redes a:hover{
+.grupo-redes a:hover:not(.cta-final-link){
     transform: translateX(3px);
     text-shadow: 2px 2px 2px rgba(59, 130, 246, 0.2);
 }
 
 #redes-email{ transform: translateX(4px);}
 #redes-email:hover{ transform: translateX(6px);}
+
+.grupo-redes .cta-final-text{
+    font-size: var(--size-p-mini);
+    color: var(--white-title);
+    font-weight: 400;
+}
+
+.grupo-redes .cta-final-link{
+    display: block;
+    margin-top: .5em;
+    font-size: var(--size-p);
+    color: var(--white-title);
+    font-weight: 500;
+    padding: .7em;
+    margin-left: 10px;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--blue-button);
+    border-radius: 15px;
+    border: 2px solid var(--blue-button);
+    transition: all .3s ease;
+}
+
+.grupo-redes .cta-final-link:hover{
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); 
+    background: var(--blue-lines);
+    color: var(--blue-text);
+    transform: translateY(-3px);
+}
 
 /* ---------------- ASIDE ---------------- */
 aside{

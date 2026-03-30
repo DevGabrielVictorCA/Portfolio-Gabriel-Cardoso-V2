@@ -160,8 +160,8 @@
     }
 
     #hero-img{
-        width: 12em;
-        height: 12em;
+        width: 13em;
+        height: 13em;
         margin: 0 auto;
         transform: translate(-10px, -50px);
     }
@@ -173,16 +173,17 @@
         justify-content: space-between;
         width: 100%;
         position: absolute;
-        bottom: 1%;
+        bottom: -11%;
         left: 50%;
         transform: translateX(-50%);
         padding: 0 8%;
+        /* border: 2px solid red; */
     }
 
     .apresentacao{ 
         padding: 25px;
         padding-top: 0;
-        margin-bottom: 0; 
+        margin-bottom: 0;
     }
 
     .apresentacao h2{ font-size: calc(var(--size-h2-mini) - .2em); }
@@ -197,19 +198,13 @@
         gap: 1.3em;
     }
 
-    .projetos-orcamento{ 
-        gap: .9em; 
-        align-items: end;
-    }
-
-
     .cta-BTN{
         display: flex;
         flex-direction: row-reverse;
     }
     .cta-BTN svg{
         margin-left: 0;
-        margin-right: 1em;
+        margin-right: .5em;
         transform: rotate(180deg);
     }
 
@@ -221,6 +216,8 @@
     }
 
     /* Projetos */
+    .projetos{ padding-top: 55px;}
+
     .grid-projetos{
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 10px;
@@ -239,7 +236,7 @@
 
     .projeto.mobile{ display: none; }
 
-    .projeto.destaque .tipo-projeto{padding: 8px 0 18px !important;}
+    .projeto.destaque .tipo-projeto{ padding: 8px 0 18px !important;}
 
     .projeto.destaque .projeto-container{
         display: flex;
@@ -254,16 +251,17 @@
         padding: 2em 3em;
     }
 
-    .img-projeto picture{ height: auto; }
+    .img-projeto picture{ 
+        display: flex;
+        justify-content: end;
+        height: auto;
+        transform: translateY(-114px); 
+    }
 
     .projeto.destaque .img-projeto {
-        display: flex;
-        align-items: center;
         overflow: hidden;
         width: 100%;
         height: 100%;
-        margin-left: 1.8em;
-        transform: translate(620px);
     }
 
     .projeto.destaque .img-projeto img {
@@ -402,14 +400,6 @@
     .S-item.fourth { grid-area: 2 / 1 / 3 / 2; }
     .S-item.fifth { grid-area: 2 / 2 / 3 / 4; }
 
-    .redes{
-        display: flex; 
-        justify-content: flex-start;
-        flex-direction: row; 
-    }
-
-    .grupo-redes{ flex: 0.45; }
-
     .front-item{
         width: 2.7em;
         height: 2.7em;
@@ -422,6 +412,19 @@
     #ui-ux{ line-height: 19px; }
 
     .SF-item:not(:last-child){ padding-bottom: 30px; }
+
+    .redes{
+        display: flex; 
+        justify-content: flex-start;
+        flex-direction: row; 
+    }
+
+    .links-redes{
+        flex-direction: row;
+        gap: 2.3em;
+    }
+
+    .grupo-redes{ flex: 0.45; }
 
     /* Aside */
     aside{
