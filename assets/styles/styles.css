@@ -86,7 +86,7 @@ header.descoberto{ transform: translateY(0); }
     clip-path: circle(0% at top right);
     gap: 2em;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
