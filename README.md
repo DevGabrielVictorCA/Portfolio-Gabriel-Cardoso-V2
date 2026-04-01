@@ -125,7 +125,7 @@ O projeto foi hospedado na plataforma **Vercel**, garantindo:
 
 ## 🧑‍💻 Autor
 
-**[Gabriel Cardoso{https://github.com/DevGabrielVictorCA}]**
+**[Gabriel Cardoso](https://github.com/DevGabrielVictorCA)**
 
 Desenvolvedor Frontend focado em UI/UX  
 Criando experiências digitais modernas.
